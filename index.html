@@ -1391,33 +1391,35 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div id="contactForm">
+                     <form netlify method="POST" name="contact-form" id="contactForm">
                         <div class="row gy-3">
                             <div class="col-md-6">
                                 <label class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="fname" placeholder="Jane Smith">
+                                <input type="text" class="form-control" id="fname" name="full-name"
+                                    placeholder="Amjad Ali Siyal">
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="femail" placeholder="jane@example.com">
+                                <input type="email" class="form-control" id="femail" name="email"
+                                    placeholder="amjadalisiyal100@gmail.com">
                             </div>
                             <div class="col-12">
                                 <label class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="fsubject"
+                                <input type="text" class="form-control" id="fsubject" name="subject"
                                     placeholder="Project Collaboration">
                             </div>
                             <div class="col-12">
                                 <label class="form-label">Message</label>
-                                <textarea class="form-control" id="fmessage"
+                                <textarea class="form-control" id="fmessage" name="message"
                                     placeholder="Tell me about your project..."></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn-send" onclick="handleSubmit()">
+                                <button class="btn-send" type="submit">
                                     <i class="fa-solid fa-paper-plane"></i> Send Message
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
